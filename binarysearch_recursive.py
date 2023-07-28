@@ -1,6 +1,8 @@
 # Recursive implementation of Binary search
 # Do not know Binary search? Refer https://en.wikipedia.org/wiki/Binary_search_algorithm
 
+# Time complexity: O(log(N)), Space complexity: O(log(N))
+# recursive calls take some space in the callstack.
 def recursiveBinarySearch(arr: list, target: int, left: int, right: int):
     # as the array is sorted, so left pointer >  right pointer means
     # the target element is not there
