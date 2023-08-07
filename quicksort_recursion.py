@@ -35,12 +35,12 @@ def quicksortHelper(arr: list, startIndex : int, endIndex : int):
 
         # if leftIndex is less than the pivot index, we are alright
         # just increment the leftIndex
-        elif arr[leftIndex] < arr[pivotIndex]:
+        elif arr[leftIndex] <= arr[pivotIndex]:
             leftIndex += 1
             
         # if rightIndex if greater than pivot, we are alright. 
         # Just decrease the right index
-        elif arr[rightIndex] > arr[pivotIndex]:
+        elif arr[rightIndex] >= arr[pivotIndex]:
             rightIndex -= 1
             
     # swaping the rightIndex with the pivot
