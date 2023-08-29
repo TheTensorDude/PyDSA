@@ -31,9 +31,22 @@ class SinglyLinkedList:
         else:
             print("Index does not exist in the Linked List")
             
+    def reverseLinkedList(self, printReversedLL = True):
+        prev = None
+        curr = self.head.next 
+        while curr:
+            nextNode = curr.next 
+            curr.next = prev 
+            prev = curr 
+            curr = nextNode 
+        self.head.next = prev
+        return prev
+            
     def printList(self):
         curr = self.head.next
         while curr:
             print(curr.val, ' -> ',  end=' ')
             curr = curr.next
         print()
+        
+    
