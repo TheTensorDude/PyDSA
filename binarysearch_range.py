@@ -8,10 +8,10 @@ def searchRangeUsingBinarySearch(nums, target):
         if nums[mid] == target:
             left, right = mid, mid
             
-            while left - 1 >= 0 and nums[left - 1] == target:
+            while (left - 1) >= 0 and nums[left - 1] == target:
                 left -= 1
             
-            while right + 1 <= lenNums - 1 and nums[right + 1] == target:
+            while (right + 1) <= lenNums - 1 and nums[right + 1] == target:
                 right += 1
                 
             return [left, right]
