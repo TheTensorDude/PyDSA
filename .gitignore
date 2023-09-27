@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.bak
+
+# Virtual Environment
+venv/
+env/
+*.venv/
+pip-log.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Model files (trained models, checkpoints, etc.)
+models/
+*.h5
+*.hdf5
+*.ckpt
+*.pth
+
+# Data files (datasets, raw data)
+data/
+
+# Temporary files
+.temp/
+
+# IDE or Editor-specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs
+logs/
+
+# Miscellaneous
+__init__.py
+.DS_Store
